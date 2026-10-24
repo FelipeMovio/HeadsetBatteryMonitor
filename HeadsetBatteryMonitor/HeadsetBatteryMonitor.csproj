@@ -11,7 +11,6 @@
   <ItemGroup>
     <Folder Include="Model\" />
     <Folder Include="Helpers\" />
-    <Folder Include="Service\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
 
