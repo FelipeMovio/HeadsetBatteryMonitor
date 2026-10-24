@@ -1,2 +1,12 @@
-# Arquivos e pastas do Visual Studio
+
+# Arquivos gerados pelo .NET
+bin/
+obj/
+
+# Arquivos do Visual Studio
 .vs/
+*.user
+*.suo
+
+# Logs
+*.log
