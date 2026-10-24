@@ -3,7 +3,7 @@ using HidSharp;
 
 namespace HeadsetBatteryMonitor.Service;
 
-public class DispositivoHidService
+public class DeviceService
 {
     public IEnumerable<HidDevice> GetConnectedDevices()
     {
