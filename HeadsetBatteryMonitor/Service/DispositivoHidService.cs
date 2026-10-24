@@ -5,8 +5,10 @@ namespace HeadsetBatteryMonitor.Service;
 
 public class DispositivoHidService
 {
-    public IEnumerable<HidDevice> ObterDispositivosConectados()
+    public IEnumerable<HidDevice> GetConnectedDevices()
     {
-        return DeviceList.Local.GetHidDevices().ToList();
+        return DeviceList.Local
+            .GetHidDevices()
+            .ToList();
     }
 }
