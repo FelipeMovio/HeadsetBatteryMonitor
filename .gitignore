@@ -1,7 +1,7 @@
 
 # Arquivos gerados pelo .NET
-bin/
-obj/
+*bin/
+*obj/
 
 # Arquivos do Visual Studio
 .vs/
