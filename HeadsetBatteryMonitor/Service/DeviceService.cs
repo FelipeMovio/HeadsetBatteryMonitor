@@ -1,14 +1,28 @@
-﻿
+﻿using HeadsetBatteryMonitor.Model;
 using HidSharp;
 
 namespace HeadsetBatteryMonitor.Service;
 
-public class DeviceService
+public class DispositivoHidService
 {
-    public IEnumerable<HidDevice> GetConnectedDevices()
+    private const int VendorId = 0x0D8C;
+    private const int ProductId = 0x0147;
+
+    public HeadsetDevice? GetHeadset()
     {
-        return DeviceList.Local
-            .GetHidDevices()
-            .ToList();
+        var device = DeviceList.Local
+            .GetHidDevices(VendorId, ProductId)
+            .FirstOrDefault();
+
+        if (device is null)
+            return null;
+
+        return new HeadsetDevice
+        {
+            Name = device.GetProductName() ?? "Captain 700 Pro",
+            VendorId = device.VendorID,
+            ProductId = device.ProductID,
+            DevicePath = device.DevicePath
+        };
     }
 }
