@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HeadsetBatteryMonitor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11194b72f215cc16c6054cb95b3ad3baabe5f72c")]
 [assembly: System.Reflection.AssemblyProductAttribute("HeadsetBatteryMonitor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HeadsetBatteryMonitor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
