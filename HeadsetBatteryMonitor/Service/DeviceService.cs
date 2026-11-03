@@ -23,6 +23,7 @@ public class DispositivoHidService
             VendorId = device.VendorID,
             ProductId = device.ProductID,
             DevicePath = device.DevicePath
+
         };
     }
 }
